@@ -1,12 +1,12 @@
 version: "3.9"
 services:
-#  react_next_pizza:
-#    restart: always
-#    build:
-#      dockerfile: Dockerfile
-#      context: ./react_next_pizza
-#    ports:
-#      - "3010:80"
+  react_next_pizza:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./react_next_pizza
+    ports:
+      - "3010:3000"
   js-calendar:
     restart: always
     build:
@@ -28,10 +28,10 @@ services:
       context: ./js-todolist
     ports:
       - "3013:80"
-#  react_web_portfolio:
-#    restart: always
-#    build:
-#      dockerfile: Dockerfile
-#      context: ./react_web_portfolio
-#    ports:
-#      - "3014:80"
+  react_web_portfolio:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./react_web_portfolio
+    ports:
+      - "3014:80"
