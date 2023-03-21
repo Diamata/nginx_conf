@@ -7,13 +7,6 @@ services:
       context: ./react_next_pizza
     ports:
       - "3010:3000"
-  js-calendar:
-    restart: always
-    build:
-      dockerfile: Dockerfile
-      context: ./js-calendar
-    ports:
-      - "3011:80"
   js-stickers:
     restart: always
     build:
@@ -35,3 +28,17 @@ services:
       context: ./react_web_portfolio
     ports:
       - "3014:80"
+  musician_info_site:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./musician_info_site
+    ports:
+      - "3015:80"
+  softline_info_site:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./softline_info_site
+    ports:
+      - "3016:80"
