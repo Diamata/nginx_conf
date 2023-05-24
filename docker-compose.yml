@@ -42,3 +42,15 @@ services:
       context: ./softline_info_site
     ports:
       - "3016:80"
+  database_nzkt:
+    build:
+     context: ./nzkt
+     dockerfile: DockerfileJsonServer
+    ports:
+     - "4001:4000"
+  nzkt:
+    build:
+     context: ./nzkt
+     dockerfile: Dockerfile
+    ports:
+     - "3017:80"
