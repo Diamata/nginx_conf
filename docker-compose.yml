@@ -40,3 +40,10 @@ services:
      dockerfile: Dockerfile
     ports:
      - "3017:80"
+  green_api_chat:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./green-api-chat
+    ports:
+      - "3018:92"
