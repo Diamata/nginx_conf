@@ -46,4 +46,4 @@ services:
       dockerfile: Dockerfile
       context: ./green-api-chat
     ports:
-      - "3018:92"
+      - "3018:80"
